@@ -33,6 +33,11 @@ Este projeto é uma aplicação ASP.NET Core que implementa um provedor de servi
    ```sh
    git clone https://github.com/luizakuze/saml-csharp 
    ```
+2. Adicione a seguinte linha ao arquivo  `/etc/hosts`:
+
+   ```sh
+   127.0.0.1 sp-csharp-local
+   ```
 2. Instale as dependências:
 
    ```sh
@@ -43,3 +48,4 @@ Este projeto é uma aplicação ASP.NET Core que implementa um provedor de servi
    ```sh
    dotnet run saml-csharp.csproj
    ``` 
+ 
