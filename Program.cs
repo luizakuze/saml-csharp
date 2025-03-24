@@ -27,6 +27,7 @@ builder.Services.AddAuthentication(opt =>
             SingleSignOnServiceUrl = new Uri("https://stubidp.sustainsys.com"), // URL do serviço de SSO
             Binding = Sustainsys.Saml2.WebSso.Saml2BindingType.HttpRedirect // Tipo de binding para redirecionamento HTTP
         });
+        
     });
 
 // Adiciona suporte a Razor Pages

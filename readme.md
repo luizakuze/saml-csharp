@@ -1,6 +1,6 @@
 # Autenticação com SAML2 em C#
  
-Este projeto é uma aplicação ASP.NET Core que implementa um provedor de serviço (SP) que pode se autenticar por meio do protocolo SAML2 utilizando a biblioteca Sustainsys.Saml2 em um provedor de identidade (IDP).
+Este projeto é uma aplicação ASP.NET Core que implementa um provedor de serviço (SP) que pode se autenticar por meio do protocolo SAML2 utilizando a biblioteca Sustainsys.Saml2 em um provedor de identidade (IDP) de teste da própria biblioteca.
  
 ## Tecnologias Utilizadas 
 - ASP.NET Core
@@ -10,21 +10,16 @@ Este projeto é uma aplicação ASP.NET Core que implementa um provedor de servi
 
 ```bash
 .
-├── appsettings.json               # Configurações gerais da aplicação, como parâmetros de inicialização e configuração de serviços.
-├── certificates                   # Contém certificados de segurança (como .crt, .pfx e .key) para testes.
-│   ├── mycert.crt                  
-│   ├── mycert.key                 
-│   ├── mycert.pfx                  
-│   └── newcert.pfx                 
-├── metadata-sp.xml                # Arquivo de metadados do Service Provider (SP)
 ├── Pages                          # Contém as páginas Razor, que são usadas para gerar conteúdo HTML dinâmico.
 │   ├── Index.cshtml               
 │   └── Index.cshtml.cs            
-├── Program.cs                     # Configura a autenticação SAML2 na aplicação ASP.NET Core
 ├── Properties                     # Contém configurações adicionais, como informações sobre o ambiente de execução.
 │   └── launchSettings.json        
-├── readme.md                       
+├── Program.cs                     # Configura a autenticação SAML2 na aplicação ASP.NET Core
+├── appsettings.json               # Configurações gerais da aplicação, como parâmetros de inicialização e configuração de serviços.             
+├── metadata-sp.xml                # Arquivo de metadados do Service Provider (SP)
 ├── saml-csharp.csproj             # Dependências. 
+├── readme.md     
 ```
 
 ## Instalação
